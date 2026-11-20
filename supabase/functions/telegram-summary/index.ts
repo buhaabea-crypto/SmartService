@@ -40,7 +40,7 @@ Deno.serve(async (request) => {
       .select('id', { count: 'exact', head: true }).eq('status', 'free')
     if (countError || count === null) return respond({ error: 'Не удалось получить количество свободных столиков.' }, 500)
 
-    const text = `Сводка TableFlow\nСвободных столиков: ${count}`
+    const text = `Сводка SmartService\nСвободных столиков: ${count}`
     const telegramResponse = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },

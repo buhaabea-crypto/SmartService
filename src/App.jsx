@@ -16,7 +16,7 @@ function formatTime(value) {
 }
 
 function Brand() {
-  return <div className="flex items-center gap-3"><div className="flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-600 text-white"><LayoutGrid size={21} /></div><div><div className="text-lg font-bold tracking-tight text-slate-900">TableFlow</div><div className="text-xs text-slate-400">Управление столиками</div></div></div>
+  return <div className="flex items-center gap-3"><div className="flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-600 text-white"><LayoutGrid size={21} /></div><div><div className="text-lg font-bold tracking-tight text-slate-900">SmartService</div><div className="text-xs text-slate-400">Управление столиками</div></div></div>
 }
 
 function Auth({ notify }) {
